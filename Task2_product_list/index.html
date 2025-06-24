@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TASK 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <input id="inp" type="text" placeholder="Enter product ...">
+  
+    <input id="inp" type="text" id="searchInput" placeholder="Enter products ..." />
     <button id="btn">Search</button>
+   <div id="container"></div>
+    
+  <select id="sort">
+  <option value="default">Sort by Price</option>
+  <option value="asc">Price: Low to High</option>
+  <option value="desc">Price: High to Low</option>
+  </select>
 
-    <div id="container">
-        
-    </div>
+  
 
-    <script src="./script.js"></script>
+  <script src="script.js"></script>
+
+ 
 </body>
 </html>
