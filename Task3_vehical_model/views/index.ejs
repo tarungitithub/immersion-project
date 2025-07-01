@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Vehicles</title></head>
+<body>
+  <h1>Vehicle List</h1>
+  <a href="/add">Add Vehicle</a>
+  <ul>
+    <% vehicles.forEach(vehicle => { %>
+      <li>
+        <strong><%= vehicle.vehicleName %></strong> - ₹<%= vehicle.price %><br>
+        <img src="<%= vehicle.image %>" width="100"/><br>
+        <%= vehicle.desc %> (<%= vehicle.brand %>)<br>
+        <a href="/delete/<%= vehicle.id %>">Delete</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
